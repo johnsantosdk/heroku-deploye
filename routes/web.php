@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('/menu', function () {
     return 'Você está no MENU';
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
